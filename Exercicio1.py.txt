@@ -1,0 +1,5 @@
+# Exercicio 1: Faça um programa que peça dois números e imprima a soma
+numero1 = int(input("Escreve um numero: "))
+numero2 = int(input("Escreve outro numero: "))
+soma = numero1 + numero2
+print(f"{numero1} + {numero2} = {soma}")
