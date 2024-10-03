@@ -101,4 +101,11 @@ nota = int(input("Insira uma nota sde 0 a 10: "))
 while nota in range(11):
     print("valor Invalido")
     nota = int(input("Insira uma nota de 0 a 10: "))
+
+# ou
+
+while true:
+    nota = int(input("Insira uma nota sde 0 a 10: "))
+    if 0 < nota <= 10:
+        break
 print("A tua nota é", nota)
