@@ -90,8 +90,74 @@ for i in range(10):
     vetor.append(num)
 soma_quadrados = sum([num ** 2 for num in vetor])
 print("Soma dos quadrados dos elementos do vetor:", soma_quadrados)
+
+print("## Exercicio 10 ##")
+vetor1 = []
+vetor2 = []
+vetor3 = []
+
+for i in range(10):
+    num1 = int(input(f"Digite o {i+1}º número do primeiro vetor: "))
+    num2 = int(input(f"Digite o {i+1}º número do segundo vetor: "))
+    vetor1.append(num1)
+    vetor2.append(num2)
+
+for i in range(10):
+    vetor3.append(vetor1[i])
+    vetor3.append(vetor2[i])
+
+print("Vetor intercalado:", vetor3)
+
+print("## Exercicio 11 ##")
+vetor1 = []
+vetor2 = []
+vetor3 = []
+vetor_final = []
+
+for i in range(10):
+    vetor1.append(int(input(f"Digite o {i+1}º número do primeiro vetor: ")))
+    vetor2.append(int(input(f"Digite o {i+1}º número do segundo vetor: ")))
+    vetor3.append(int(input(f"Digite o {i+1}º número do terceiro vetor: ")))
+
+for i in range(10):
+    vetor_final.append(vetor1[i])
+    vetor_final.append(vetor2[i])
+    vetor_final.append(vetor3[i])
+
+print("Vetor intercalado:", vetor_final)
+
+print("## Exercicio 12 ##")
+idades = []
+alturas = []
+
+for i in range(30):
+    idade = int(input(f"Digite a idade do aluno {i+1}: "))
+    altura = float(input(f"Digite a altura do aluno {i+1} em metros: "))
+    idades.append(idade)
+    alturas.append(altura)
+
+media_altura = sum(alturas) / len(alturas)
+alunos_com_mais_13_anos = sum(1 for i in range(30) if idades[i] > 13 and alturas[i] < media_altura)
+
+print(f"Alunos com mais de 13 anos e altura abaixo da média: {alunos_com_mais_13_anos}")
+
+print("## Exercicio 13 ##")
+meses = [
+    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+]
+temperaturas = []
+
+for i in range(12):
+    temperatura = float(input(f"Digite a temperatura média de {meses[i]}: "))
+    temperaturas.append(temperatura)
+
+media_anual = sum(temperaturas) / len(temperaturas)
+
+print(f"Média anual das temperaturas: {media_anual:.2f}°C")
+print("Meses com temperatura acima da média anual:")
+
+for i in range(12):
+    if temperaturas[i] > media_anual:
+        print(f"{i+1} - {meses[i]}: {temperaturas[i]:.2f}°C")
 ##################################### TEMINOU #########################################
-x = 1
-while x != 0:
-	input("\n\n##################################### TEMINOU #########################################")
-	x += 1
