@@ -84,3 +84,20 @@ for nome in nomes:
 # Set #########################################################
 
 # dict ########################################################
+
+
+
+
+
+
+
+
+
+
+
+
+nomes = [    "Ana", "Bruno", "Carlos", "Daniela", "Eduardo", "Fernanda", "Gabriel", "Helena", "Igor", "Julia",    "Karla", "Lucas", "Mariana", "Nicolas", "Olivia", "Pedro", "Quintino", "Rafael", "Sara", "Tatiana",    "Ursula", "Vinicius", "Wagner", "Xavier", "Yasmin"]
+
+lista3 = [n for n in nomes if n[-1] == "a"]
+
+print(lista3)

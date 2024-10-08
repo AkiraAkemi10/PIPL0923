@@ -10,9 +10,11 @@ for i in range(contagem):
     nota = int(input(f"Insira a {i+1}º nota: "))
     while nota > 20 or nota < 0:
         if nota > 20 or nota < 0:
-            print("Nota invalida")
+            print("Nota invalida, as notas são de 0 a 20.")
             nota = int(input(f"Insira novamente a {i+1}º nota: "))
         else:
             break
     lista.append(nota)
 print(lista)
+
+
